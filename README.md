@@ -1,5 +1,5 @@
 # MyWishList
-&lt;Chrome Extension> Make a wishlist of Etsy items!
+MyWishList is a Chrome extension that allows you to make a wishlist of Etsy items!
 
 
 MIT License
