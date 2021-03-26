@@ -24,7 +24,7 @@
    "content_scripts": [
     {
       "matches": ["http://*.etsy.com/*", "https://*.etsy.com/*"],
-      "js": ["libs/underscore.min.js", "clean.js"]
+      "js": ["clean.js"]
     }
   ],
 
