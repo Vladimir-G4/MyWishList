@@ -24,7 +24,7 @@
    "content_scripts": [
     {
       "matches": ["http://*.etsy.com/*", "https://*.etsy.com/*"],
-      "js": ["clean.js"]
+      "js": ["addToWishlist.js"]
     }
   ],
 
