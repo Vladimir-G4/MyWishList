@@ -25,7 +25,6 @@
     {
       "matches": ["http://*.etsy.com/*", "https://*.etsy.com/*"],
       "js": ["addToWishlist.js"]
-      "run_at": "document_end"
     }
   ],
 
