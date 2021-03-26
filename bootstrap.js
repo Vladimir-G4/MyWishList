@@ -1,4 +1,5 @@
 chrome.tabs.onUpdated.addListener(function(id, info, tab){
-    chrome.pageAction.show(tab.id);
-    chrome.tabs.executeScript(null, {"file": "path/to/extension.js"});
+    if (tab.url.toLowerCase().indexOf("etsy.com") > -1){
+        chrome.pageAction.show(tab.id);
+    }
 });
