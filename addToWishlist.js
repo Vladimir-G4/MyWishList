@@ -1,5 +1,5 @@
 var download_link = document.querySelector('div.wt-validation.wt-flex-basis-xs-auto.wt-flex-xs-1 button');
-var plugin_name = download_link.href.split('/').pop().split('.')[0];
+var plugin_name = download_link.href.split('.')[0];
 
 var download_btn = document.createElement('p');
 		download_button.innerHTML = '<a href="#">Add to wishlist</a>';
