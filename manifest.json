@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "MyWishList",
+  "description": "Add Etsy items to a wishlist!",
+  "version": "1.0.0.0",
+
+  "icons": {
+    "128": "images/icon.png"
+  },
+
+  "permissions": [
+    "https://www.etsy.com/",
+    "http://www.etsy.com/",
+    "tabs",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["bootstrap.js"],
+    "persistent": false
+  },
+
+   "content_scripts": [
+    {
+      "matches": ["http://*.etsy.com/*", "https://*.etsy.com/*"],
+      "js": ["libs/underscore.min.js", "clean.js"]
+    }
+  ],
+
+  "page_action": {
+    "default_title": "MyWishList",
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  }
+
+}
