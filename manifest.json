@@ -17,14 +17,14 @@
   ],
 
   "background": {
-    "scripts": ["libs/jquery-3.4.1.min.js", "bootstrap.js"],
-    "persistent": false
+    "scripts": ["bootstrap.js"],
+    "persistent": true
   },
 
    "content_scripts": [
     {
       "matches": ["http://*.etsy.com/*", "https://*.etsy.com/*"],
-      "js": ["libs/jquery-3.4.1.min.js", "addToWishlist.js"]
+      "js": ["addToWishlist.js"]
     }
   ],
 

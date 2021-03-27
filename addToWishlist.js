@@ -1,13 +1,13 @@
-var download_link = document.querySelector('div.wt-validation.wt-flex-basis-xs-auto.wt-flex-xs-1 button');
-var plugin_name = download_link.href.split('.')[0];
+var BTN_ADD_TO_CART = document.querySelector('div[class="wt-display-flex-xs wt-flex-direction-column-xs wt-flex-direction-row-md wt-flex-wrap wt-flex-direction-column-lg"]')
+var BTN_ADD_TO_LIST = document.createElement('div');
 
-var download_btn = document.createElement('p');
-		download_button.innerHTML = '<a href="#">Add to wishlist</a>';
-		download_button.className = "button special-plugin-button";
-		download_button.dataset.name = plugin_name;
-		download_link.parentElement.insertAdjacentElement('beforebegin',p);
-	    p.querySelector('a').addEventListener('click',clickHandler,true);
+BTN_ADD_TO_CART.style.marginBottom = "20px";
 
-      clickHandler = function(){
-        console.log("I've been clicked.");
-      }
+BTN_ADD_TO_LIST.innerHTML = '<button class="wt-btn wt-btn--filled wt-width-full" type="button"><div>                   Add to wishlist               </div></button>';
+BTN_ADD_TO_CART.insertAdjacentElement('afterend', BTN_ADD_TO_LIST);
+
+clickHandler = function(){
+     console.log("I've been clicked.");
+} 
+
+BTN_ADD_TO_LIST.querySelector('button').addEventListener('click',clickHandler,true);
