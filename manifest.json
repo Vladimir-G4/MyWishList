@@ -17,13 +17,13 @@
   ],
 
   "background": {
-    "scripts": ["bootstrap.js"],
-    "persistent": true
+    "scripts": ["background.js"],
+    "persistent" : true 
   },
 
    "content_scripts": [
     {
-      "matches": ["http://*.etsy.com/*", "https://*.etsy.com/*"],
+      "matches": ["http://*.etsy.com/listing/*", "https://*.etsy.com/listing/*"],
       "js": ["addToWishlist.js"]
     }
   ],
